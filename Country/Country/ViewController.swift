@@ -45,9 +45,10 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering() {
-        return filteredCountry.count
-    }
-        return countries.count
+            return filteredCountry.count
+        } else {
+            return countries.count
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,9 +60,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         } else {
             country = countries[indexPath.row]
         }
-        
-        cell.textLabel!.text = country.name
-        cell.textLabel?.text = countries[indexPath.row].name
+        cell.textLabel?.text = country.name
         return cell
     }
 }
@@ -69,8 +68,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
+        if isFiltering() {
+            filteredCountry = countries.filter { country -> Bool in
+                return country.name.lowercased().starts(with: searchText.lowercased())
+            }
+        } else {
+            filteredCountry = []
+        }
+        table.reloadData()
     }
-    
 }
 
 extension ViewController {
@@ -89,6 +95,6 @@ extension ViewController {
 }
 extension ViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-       
+        
     }
 }

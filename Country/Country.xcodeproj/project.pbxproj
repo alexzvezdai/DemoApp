@@ -19,8 +19,6 @@
 		ABFAA71C2392F9C600EF75D7 /* CountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFAA71B2392F9C600EF75D7 /* CountryTests.swift */; };
 		ABFAA7272392F9C600EF75D7 /* CountryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFAA7262392F9C600EF75D7 /* CountryUITests.swift */; };
 		ABFAA73823930C7B00EF75D7 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFAA73723930C7B00EF75D7 /* Country.swift */; };
-		ABFAA73A23930E3C00EF75D7 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFAA73923930E3C00EF75D7 /* Language.swift */; };
-		ABFAA73E2393167A00EF75D7 /* Сurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFAA73D2393167A00EF75D7 /* Сurrency.swift */; };
 		D16AAB24476DDF1283B375E8 /* Pods_CountryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3867CC9CB8B0B09DC049BF3B /* Pods_CountryTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +61,6 @@
 		ABFAA7262392F9C600EF75D7 /* CountryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryUITests.swift; sourceTree = "<group>"; };
 		ABFAA7282392F9C600EF75D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABFAA73723930C7B00EF75D7 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		ABFAA73923930E3C00EF75D7 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
-		ABFAA73D2393167A00EF75D7 /* Сurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Сurrency.swift"; sourceTree = "<group>"; };
 		BD465DED495C41B2B204A15C /* Pods-Country-CountryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Country-CountryUITests.release.xcconfig"; path = "Target Support Files/Pods-Country-CountryUITests/Pods-Country-CountryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD0456EC1FB3BCCC4D24E4AE /* Pods_Country.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Country.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AEA97A849E8E0A7A1661F7 /* Pods-CountryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryTests.debug.xcconfig"; path = "Target Support Files/Pods-CountryTests/Pods-CountryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,8 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				ABFAA73723930C7B00EF75D7 /* Country.swift */,
-				ABFAA73923930E3C00EF75D7 /* Language.swift */,
-				ABFAA73D2393167A00EF75D7 /* Сurrency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -445,8 +439,6 @@
 			files = (
 				ABE408562393297D008317A2 /* NetworkingClient.swift in Sources */,
 				ABFAA73823930C7B00EF75D7 /* Country.swift in Sources */,
-				ABFAA73A23930E3C00EF75D7 /* Language.swift in Sources */,
-				ABFAA73E2393167A00EF75D7 /* Сurrency.swift in Sources */,
 				ABFAA7092392F9C100EF75D7 /* ViewController.swift in Sources */,
 				ABFAA7052392F9C100EF75D7 /* AppDelegate.swift in Sources */,
 				ABFAA7072392F9C100EF75D7 /* SceneDelegate.swift in Sources */,
